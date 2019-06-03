@@ -1,0 +1,489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0102)https://admin.goodhealthgateway.com/DHAP/DHAPForms.aspx?UserId=217230&EmployerId=99&RewardProgramId=53 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+
+</title><meta http-equiv="X-UA-Compatible" content="IE=9">
+
+    <script type="text/javascript" src="https://admin.goodhealthgateway.com/DHAP/DHAPForms.aspx?UserId=217230&amp;EmployerId=99&amp;RewardProgramId=53"></script>
+    <link rel="stylesheet" media="all" type="text/css" href="https://admin.goodhealthgateway.com/DHAP/DHAPForms.aspx?UserId=217230&amp;EmployerId=99&amp;RewardProgramId=53">
+    <script type="text/javascript" src="https://admin.goodhealthgateway.com/DHAP/DHAPForms.aspx?UserId=217230&amp;EmployerId=99&amp;RewardProgramId=53"></script>
+
+    <link rel="stylesheet" media="all" type="text/css" href="https://admin.goodhealthgateway.com/DHAP/DHAPForms.aspx?UserId=217230&amp;EmployerId=99&amp;RewardProgramId=53">
+    <link rel="stylesheet" media="all" type="text/css" href="https://admin.goodhealthgateway.com/DHAP/DHAPForms.aspx?UserId=217230&amp;EmployerId=99&amp;RewardProgramId=53">
+
+
+
+      <script type="text/javascript">
+
+          function Cancel() {
+               //go to search page:
+               document.location.href = "DHAPForms.aspx?UserId=" + document.getElementById('hiddenGHGUserId').value + "&RewardProgramId=" + document.getElementById('hiddenRewardProgramId').value;
+          }
+
+          function ValidateNumeric(obj) {
+              //This will be used to make sure a field contains numeric values only (ex: Height)
+
+
+                   if (!obj.value == "") {
+                       if(isNaN(obj.value)){
+                           alert("Please enter numeric value.")
+                           obj.focus();
+                           return false;
+                       }
+                   }
+                   return true;  //it is fine
+          }
+
+
+
+          function formatPhoneNumber(obj) {
+              alert('formatPhoneNumber')
+              obj.value = '';
+              //obj.value = '222';
+              var phonenum = obj.value;
+              var regexObj = /^(?:\+?1[-. ]?)?(?:\(?([0-9]{3})\)?[-. ]?)?([0-9]{3})[-. ]?([0-9]{4})$/;
+              if (regexObj.test(phonenum)) {
+                  var parts = phonenum.match(regexObj);
+                  var phone = "";
+                  if (parts[1]) { phone += "+1 (" + parts[1] + ") "; }
+                  phone += parts[2] + "-" + parts[3];
+                  alert(phone)
+                  ////return phone;
+                  ////obj.value = phone
+              }
+              else {
+                  //  //invalid phone number
+                  alert(phonenum)
+                  ////obj.value = phonenum;
+                  ////return phonenum;
+              }
+
+          }
+
+          function formatPhone(obj) {
+              var numbers = obj.value.replace(/\D/g, ''),
+              char = { 0: '(', 3: ') ', 6: ' - ' };
+              obj.value = '';
+              for (var i = 0; i < numbers.length; i++) {
+                  obj.value += (char[i] || '') + numbers[i];
+              }
+          }
+
+    </script>
+        <link href="./4_files/style.css" rel="stylesheet" type="text/css"></head>
+<body>
+    <form name="form1" method="post" action="https://admin.goodhealthgateway.com/DHAP/DHAPFormBasic.aspx?FormID=8618" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./4_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./4_files/WebResource(1).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DCC55517">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+</div>
+    <input name="hiddenFormID" type="hidden" id="hiddenFormID" value="8618">
+     <input name="hiddenMemberID" type="hidden" id="hiddenMemberID">
+     <input name="hiddenGHGUserId" type="hidden" id="hiddenGHGUserId" value="217230">
+     <input name="hiddenFirstName" type="hidden" id="hiddenFirstName">
+     <input name="hiddenLastName" type="hidden" id="hiddenLastName">
+     <input name="hiddenDOB" type="hidden" id="hiddenDOB">
+     <input name="hiddenFormFirstName" type="hidden" id="hiddenFormFirstName">
+     <input name="hiddenFormLastName" type="hidden" id="hiddenFormLastName">
+     <input name="hiddenFormDOB" type="hidden" id="hiddenFormDOB">
+     <input name="hiddenNextStep" type="hidden" id="hiddenNextStep">
+     <input name="hiddenReward" type="hidden" id="hiddenReward" value="Troy University">
+     <input name="hiddenRewardProgram" type="hidden" id="hiddenRewardProgram">
+     <input name="hiddenRewardProgramId" type="hidden" id="hiddenRewardProgramId" value="53">
+
+
+
+     <h3> </h3>
+
+     <div style="text-align: center; width: 100%">
+			<div id="wrapper">
+				<div id="header">
+
+<link href="./4_files/style.css" rel="stylesheet" type="text/css">
+<link href="./4_files/style(1).css" rel="stylesheet" type="text/css">
+<div style="width: 100%; margin: 0xp; padding: 0px">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 0xp;
+        padding: 0px">
+        <tbody><tr style="max-height: 50px; min-height: 50px;">
+            <td style="width: 20%; vertical-align: bottom; text-align: left; height: 39px; margin: 0xp;
+                padding: 0px">
+                <a id="Header1_hlink" href="https://admin.goodhealthgateway.com/Default.aspx"><img id="Header1_imgLogo" src="./4_files/logo.gif" align="absbottom" style="border-width:0px;"></a> </td>
+            <td style="text-align: right; width: 30%; height: 39px;">
+                 </td>
+            <td style="text-align: right; width: 20%; height: 39px;">
+                 </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="height: 20px; background-color: #D3E1F9;">
+                <div style="text-align: right; margin-right: 10px">
+
+                    </div>
+            </td>
+        </tr>
+        <tr style="background-color: #336699; height: 20px; min-height: 20px; max-height: 20px;
+            vertical-align: middle; margin: 5px">
+            <td style="width: 20%; vertical-align: middle; text-align: left; height: 20px;">
+                <div style="margin-left: 10px">
+                    <span id="Header1_lblWelcome" class="whiteBoldtext"></span>
+                </div>
+            </td>
+            <td style="text-align: right; height: 20px; padding-right:5px;" colspan="2">
+                <span id="Header1_Label1" class="whiteBoldtext">Today's Date: </span><span id="Header1_lblDate" class="whiteBoldtext">June 3, 2019</span>
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+				</div>
+				<div id="centercolumn2">
+
+      <div style="padding: 10px;" class="p">
+    <table cellpadding="5" style="border: none; width: 100%; text-align: left;">
+
+        <caption style="text-align: left; font-weight: bold;">Assessment - Member Basic Information</caption>
+         <tbody><tr>
+            <td colspan="2">
+                <hr>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="width: 25%"><span id="lblRwdPgm">Reward Program:</span></td>
+            <td><span id="lblRwdPgmData" style="font-weight:bold;">University</span></td>
+        </tr>
+        <tr>
+            <td><span id="lblName">Name:</span></td>
+            <td><span id="lblNameData" style="font-weight:bold;">ROD  FRANK</span></td>
+        </tr>
+        <tr>
+            <td><span id="lblDateOfBirth">Date of Birth:</span></td>
+            <td><span id="lblDateOfBirthData" style="font-weight:bold;">4/30/1922</span></td>
+        </tr>
+          <tr>
+        <td><span id="lblGHGUserId">Good Health Gateway User ID:</span></td>
+        <td><span id="lblGHGUserIdData" style="font-weight:bold;">3213223</span></td>
+        </tr>
+         <tr>
+            <td colspan="2">
+                <hr>
+            </td>
+        </tr>
+
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+
+         <tr>
+        <td><span id="lblFirstName">First Name:</span></td>
+        <td><input name="txtFirstName" type="text" value="FRANK" maxlength="100" readonly="readonly" id="txtFirstName" style="border-style:None;font-weight:bold;width:225px;">
+            <span id="labelFirstNameMessage"></span></td>
+        </tr>
+        <tr>
+            <td><span id="lblMiddleName">Middle Name:</span></td>
+            <td><input name="txtMiddleName" type="text" maxlength="100" readonly="readonly" id="txtMiddleName" style="border-style:None;font-weight:bold;width:225px;"></td>
+        </tr>
+         <tr>
+            <td><span id="lblLastName">Last Name:</span></td>
+            <td><input name="txtLastName" type="text" value="ROD" maxlength="100" readonly="readonly" id="txtLastName" style="border-style:None;font-weight:bold;width:225px;">
+            <span id="labelLastNameMessage"></span></td>
+        </tr>
+         <tr>
+            <td><span id="lblDOB">Date of Birth:</span></td>
+            <td><input name="txtDOB" type="text" value="4/2/1934" readonly="readonly" id="txtDOB" style="border-style:None;font-weight:bold;"></td>
+        </tr>
+        <tr>
+            <td><span id="lblMemberType">Member Type: </span></td>
+            <td>
+            <table id="rdoMemberType" border="0">
+	<tbody><tr>
+		<td><input id="rdoMemberType_0" type="radio" name="rdoMemberType" value="0"><label for="rdoMemberType_0">Subscriber</label></td><td><input id="rdoMemberType_1" type="radio" name="rdoMemberType" value="1"><label for="rdoMemberType_1">Spouse Dependent</label></td><td><input id="rdoMemberType_2" type="radio" name="rdoMemberType" value="2"><label for="rdoMemberType_2">Child Dependent</label></td><td><input id="rdoMemberType_3" type="radio" name="rdoMemberType" value="3"><label for="rdoMemberType_3">Unknown</label></td>
+	</tr>
+</tbody></table></td>
+        </tr>
+
+         <tr>
+            <td><span id="lblDiagnosisYear">Diagnosis Year: </span></td>
+            <td><input name="txtDiagnosisYear" type="text" value="2018" maxlength="4" id="txtDiagnosisYear">
+
+            <span id="RangeValidator5" style="color:Red;visibility:hidden;">Please enter a valid year. </span>
+
+            </td>
+        </tr>
+
+
+        <tr>
+            <td><span id="lblDiagnosisWeight">Diagnosis Weight: </span></td>
+            <td class="regular"><input name="txtDiagnosisWeight" type="text" value="290" maxlength="6" id="txtDiagnosisWeight"> (in lbs.)
+                    <span id="RangeValidator2" style="color:Red;visibility:hidden;">Please enter numeric value between 0 and 500 - decimals are allowed.</span>
+            </td>
+        </tr>
+         <tr>
+            <td><span id="lblDiabetesType">Diabetes Type: </span></td>
+            <td nowrap="true" class="regular">
+            <table id="rdoDiabetesType" border="0">
+	<tbody><tr>
+		<td><input id="rdoDiabetesType_0" type="radio" name="rdoDiabetesType" value="0"><label for="rdoDiabetesType_0">Type 1</label></td><td><input id="rdoDiabetesType_1" type="radio" name="rdoDiabetesType" value="1" checked="checked"><label for="rdoDiabetesType_1">Type 2</label></td><td><input id="rdoDiabetesType_2" type="radio" name="rdoDiabetesType" value="2"><label for="rdoDiabetesType_2">Pre-Diabetes</label></td><td><input id="rdoDiabetesType_3" type="radio" name="rdoDiabetesType" value="3"><label for="rdoDiabetesType_3">Unknown</label></td>
+	</tr>
+</tbody></table></td>
+        </tr>
+        <tr>
+            <td><span id="lblAssessmentDate">Assessment Date: </span></td>
+            <td nowrap="true"><input name="txtAssessmentDate" type="text" value="6/3/2019" id="txtAssessmentDate">
+              <span id="RegularExpressionValidatortxtAssessmentDate" style="color:Red;display:none;">Please enter a valid date.</span>
+
+
+            </td>
+
+
+        </tr>
+        <tr>
+            <td><span id="lblCurrentWeight">Current Weight: </span></td>
+            <td nowrap="true" class="regular">
+            <input name="txtCurrentWeight" type="text" value="290" maxlength="6" id="txtCurrentWeight"> (in lbs.)
+
+            <span id="RangeValidator1" style="color:Red;visibility:hidden;">Please enter numeric value between 0 and 500 - decimals are allowed.</span>
+
+
+            </td>
+        </tr>
+         <tr>
+            <td><span id="lblCurrentHeight">Current Height: </span></td>
+            <td nowrap="true" class="regular">
+                                <input name="txtCurrentHeightFeet" type="text" value="6" maxlength="2" id="txtCurrentHeightFeet"> (feet)&nbsp;&nbsp;
+                              <input name="txtCurrentHeightInches" type="text" value="4" maxlength="5" id="txtCurrentHeightInches"> (inches)
+
+                                <span id="RangeValidator3" style="color:Red;visibility:hidden;">Please enter whole number between 0 and 7.</span>
+                             <br>
+                                     <span id="RangeValidator4" style="color:Red;visibility:hidden;">Please enter numeric value between 0 and 11 - decimals are allowed.</span>
+
+                       </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td nowrap="true"></td>
+        </tr>
+        <tr>
+            <td><span id="lblRecentBPUpper">Recent BP - Systolic:</span></td>
+            <td nowrap="true"><input name="txtRecentBPUpper" type="text" value="123" maxlength="3" id="txtRecentBPUpper">
+             <span id="CompareValidator7" style="color:Red;visibility:hidden;">Value must be numeric.</span>
+
+
+            <span id="lblRecentBPLower">Diastolic:</span>
+            <input name="txtRecentBPLower" type="text" value="70" maxlength="3" id="txtRecentBPLower">
+              <span id="CompareValidator8" style="color:Red;visibility:hidden;">Value must be numeric.</span>
+          </td>
+
+        </tr>
+        <tr>
+            <td><span id="lblRecentA1c">Most Recent A1c: </span></td>
+            <td nowrap="true"><input name="txtRecentA1c" type="text" value="7.9" maxlength="5" id="txtRecentA1c">
+             <span id="CompareValidator5" style="color:Red;visibility:hidden;">Value must be numeric.</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span id="lblRiskScore">Patient Risk Score: </span></td>
+            <td nowrap="true" class="regular">
+            <table id="rdoRiskScore" border="0">
+	<tbody><tr>
+		<td><input id="rdoRiskScore_0" type="radio" name="rdoRiskScore" value="0"><label for="rdoRiskScore_0">Low</label></td>
+	</tr><tr>
+		<td><input id="rdoRiskScore_1" type="radio" name="rdoRiskScore" value="1" checked="checked"><label for="rdoRiskScore_1">Medium</label></td>
+	</tr><tr>
+		<td><input id="rdoRiskScore_2" type="radio" name="rdoRiskScore" value="2"><label for="rdoRiskScore_2">High</label></td>
+	</tr><tr>
+		<td><input id="rdoRiskScore_3" type="radio" name="rdoRiskScore" value="3"><label for="rdoRiskScore_3">Adequate Control</label></td>
+	</tr><tr>
+		<td><input id="rdoRiskScore_4" type="radio" name="rdoRiskScore" value="4"><label for="rdoRiskScore_4">Not controlled, but actively accessing health care resources and working toward behavior changes</label></td>
+	</tr><tr>
+		<td><input id="rdoRiskScore_5" type="radio" name="rdoRiskScore" value="5"><label for="rdoRiskScore_5">Not controlled, accessing some but not all indicated health care resources and not making all behavior changes</label></td>
+	</tr><tr>
+		<td><input id="rdoRiskScore_6" type="radio" name="rdoRiskScore" value="6"><label for="rdoRiskScore_6">Poorly controlled and major gaps in access to and utilization of health care resources and not making behavior changes</label></td>
+	</tr><tr>
+		<td><input id="rdoRiskScore_7" type="radio" name="rdoRiskScore" value="7"><label for="rdoRiskScore_7">Not controlled, but non-diabetes medical issues dominate prognosis</label></td>
+	</tr>
+</tbody></table></td>
+
+        </tr>
+
+         <tr>
+            <td colspan="1" align="left"><span id="lblRequestMonitor">MTM - Refer to Abacus Clinical Pharmacist</span></td>
+            <td align="left"><input id="chkRequestMonitor" type="checkbox" name="chkRequestMonitor">
+
+        </td>
+
+        </tr>
+
+
+        <tr> <!-- Buttons (Back, Next)  -->
+
+               <td colspan="2"><input type="submit" name="btnSave" value="Save &amp; Close" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSave&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnSave" style="width:150px;">
+                <input type="button" id="btnCancel" value="Cancel" onclick="Cancel();">
+                <input type="submit" name="btnNext" value="Next &gt;&gt;" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnNext&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnNext" style="width:150px;">
+               </td>
+
+
+		  </tr>
+
+     </tbody></table>
+     </div>
+
+
+    </div>
+             <div id="footer">
+
+
+
+<link href="./4_files/style.css" rel="stylesheet" type="text/css">
+<link href="./4_files/style(1).css" rel="stylesheet" type="text/css">
+
+
+
+<div>
+    <hr style="color: #336699;">
+    <span id="Footer1_Label2" class="p" style="display:inline-block;width:300px;">© 2013 Abacus Management Technologies, LLC</span>
+</div>
+
+
+                    	</div>
+			</div>
+		   </div>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("RangeValidator5"), document.getElementById("RangeValidator2"), document.getElementById("RegularExpressionValidatortxtAssessmentDate"), document.getElementById("RangeValidator1"), document.getElementById("RangeValidator3"), document.getElementById("RangeValidator4"), document.getElementById("CompareValidator7"), document.getElementById("CompareValidator8"), document.getElementById("CompareValidator5"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var RangeValidator5 = document.all ? document.all["RangeValidator5"] : document.getElementById("RangeValidator5");
+RangeValidator5.controltovalidate = "txtDiagnosisYear";
+RangeValidator5.errormessage = "Please enter a valid year. ";
+RangeValidator5.type = "Integer";
+RangeValidator5.evaluationfunction = "RangeValidatorEvaluateIsValid";
+RangeValidator5.maximumvalue = "3050";
+RangeValidator5.minimumvalue = "1900";
+var RangeValidator2 = document.all ? document.all["RangeValidator2"] : document.getElementById("RangeValidator2");
+RangeValidator2.controltovalidate = "txtDiagnosisWeight";
+RangeValidator2.errormessage = "Please enter numeric value between 0 and 500 - decimals are allowed.";
+RangeValidator2.type = "Double";
+RangeValidator2.decimalchar = ".";
+RangeValidator2.evaluationfunction = "RangeValidatorEvaluateIsValid";
+RangeValidator2.maximumvalue = "500";
+RangeValidator2.minimumvalue = "0";
+var RegularExpressionValidatortxtAssessmentDate = document.all ? document.all["RegularExpressionValidatortxtAssessmentDate"] : document.getElementById("RegularExpressionValidatortxtAssessmentDate");
+RegularExpressionValidatortxtAssessmentDate.controltovalidate = "txtAssessmentDate";
+RegularExpressionValidatortxtAssessmentDate.errormessage = "Please enter a valid date.";
+RegularExpressionValidatortxtAssessmentDate.display = "Dynamic";
+RegularExpressionValidatortxtAssessmentDate.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidatortxtAssessmentDate.validationexpression = "(([1-9]|1[012])[- /.]([1-9]|[12][0-9]|3[01])[- /.](19|20)\\d\\d)|((1[012]|0[1-9])(3[01]|2\\d|1\\d|0[1-9])(19|20)\\d\\d)|((1[012]|0[1-9])[- /.](3[01]|2\\d|1\\d|0[1-9])[- /.](19|20)\\d\\d)";
+var RangeValidator1 = document.all ? document.all["RangeValidator1"] : document.getElementById("RangeValidator1");
+RangeValidator1.controltovalidate = "txtCurrentWeight";
+RangeValidator1.errormessage = "Please enter numeric value between 0 and 500 - decimals are allowed.";
+RangeValidator1.type = "Double";
+RangeValidator1.decimalchar = ".";
+RangeValidator1.evaluationfunction = "RangeValidatorEvaluateIsValid";
+RangeValidator1.maximumvalue = "500";
+RangeValidator1.minimumvalue = "0";
+var RangeValidator3 = document.all ? document.all["RangeValidator3"] : document.getElementById("RangeValidator3");
+RangeValidator3.controltovalidate = "txtCurrentHeightFeet";
+RangeValidator3.errormessage = "Please enter whole number between 0 and 7.";
+RangeValidator3.type = "Integer";
+RangeValidator3.evaluationfunction = "RangeValidatorEvaluateIsValid";
+RangeValidator3.maximumvalue = "7";
+RangeValidator3.minimumvalue = "0";
+var RangeValidator4 = document.all ? document.all["RangeValidator4"] : document.getElementById("RangeValidator4");
+RangeValidator4.controltovalidate = "txtCurrentHeightInches";
+RangeValidator4.errormessage = "Please enter numeric value between 0 and 11 - decimals are allowed.";
+RangeValidator4.type = "Double";
+RangeValidator4.decimalchar = ".";
+RangeValidator4.evaluationfunction = "RangeValidatorEvaluateIsValid";
+RangeValidator4.maximumvalue = "11.99";
+RangeValidator4.minimumvalue = "0";
+var CompareValidator7 = document.all ? document.all["CompareValidator7"] : document.getElementById("CompareValidator7");
+CompareValidator7.controltovalidate = "txtRecentBPUpper";
+CompareValidator7.errormessage = "Value must be numeric.";
+CompareValidator7.type = "Double";
+CompareValidator7.decimalchar = ".";
+CompareValidator7.evaluationfunction = "CompareValidatorEvaluateIsValid";
+CompareValidator7.operator = "DataTypeCheck";
+var CompareValidator8 = document.all ? document.all["CompareValidator8"] : document.getElementById("CompareValidator8");
+CompareValidator8.controltovalidate = "txtRecentBPLower";
+CompareValidator8.errormessage = "Value must be numeric.";
+CompareValidator8.type = "Double";
+CompareValidator8.decimalchar = ".";
+CompareValidator8.evaluationfunction = "CompareValidatorEvaluateIsValid";
+CompareValidator8.operator = "DataTypeCheck";
+var CompareValidator5 = document.all ? document.all["CompareValidator5"] : document.getElementById("CompareValidator5");
+CompareValidator5.controltovalidate = "txtRecentA1c";
+CompareValidator5.errormessage = "Value must be numeric.";
+CompareValidator5.type = "Double";
+CompareValidator5.decimalchar = ".";
+CompareValidator5.evaluationfunction = "CompareValidatorEvaluateIsValid";
+CompareValidator5.operator = "DataTypeCheck";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+
+
+</body></html>
