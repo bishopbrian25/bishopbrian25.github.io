@@ -1,0 +1,133 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #BCEFFF;
+}
+
+nav.custom-nav{
+    background-color: #021F4C;
+
+}
+
+.jumbo-header{
+    padding-bottom: 1rem;
+}
+
+
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.22);
+}
+
+
+#bootstrap-overrides a{
+    color: #E3F8FF;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #3866A5;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 50rem;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+    
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+.marketing{
+    background-color: #BCEFFF;
+    padding-top: 3rem;
+    color: #021F4C;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+
+Still need to improve with built in bootstrap breakpoints
+-------------------------------------------------- */
+
+@media (max-width: 1000px) {
+  /* Bump up size of carousel content */
+      .jumbotron .container {
+  max-width: 35em;
+          
+    }
+    .img-fluid {
+        margin-top: 2em;
+  max-width: 75%;
+  height: auto
+}
+}
+
+@media (min-width: 62em) {
+
+}
